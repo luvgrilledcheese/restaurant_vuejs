@@ -2,11 +2,8 @@
   <div class="home">
     <div class="container">
       <h1 class="title">
-        Restaurant Home
+        Restaurant Menu
       </h1>
-      <p>
-        TP1 de Richi Tan, Mahdi
-      </p>
     </div>
   </div>
 </template>
@@ -15,7 +12,7 @@
 // @ is an alias to /src
 
 export default {
-  name: 'Home',
+  name: 'Menu',
   components: {
   },
 };
