@@ -1,5 +1,5 @@
 # TP1 - Restaurant Website
-### Made by Richi Tan, Mahdi Adnan Krayem, Franco Hyunh, Alexandru Prisecariu
+#### Made by Richi Tan, Mahdi Adnan Krayem, Franco Hyunh, Alexandru Prisecariu
 ## Project setup
 ```
 npm install
