@@ -1,5 +1,6 @@
 # TP1 - Restaurant Website
 #### Made by Richi Tan, Mahdi Adnan Krayem, Franco Hyunh, Alexandru Prisecariu
+#### Makes use of json-server and vuex
 ## Project setup
 ```
 npm install
