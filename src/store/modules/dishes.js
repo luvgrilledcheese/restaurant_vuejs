@@ -20,14 +20,14 @@ const actions = {
   },
   //   async addDish({ commit }, title) {
   //     const response = await axios.post(
-  //       'https://jsonplaceholder.typicode.com/dishes',
+  //       'http://localhost:3000/dishess',
   //       { title, completed: false },
   //     );
 
   //     commit('newDish', response.data);
   //   },
   //   async deleteDish({ commit }, id) {
-  //     await axios.delete(`https://jsonplaceholder.typicode.com/dishes/${id}`);
+  //     await axios.delete(`http://localhost:3000/dishes/${id}`);
 
   //     commit('removeDish', id);
   //   },
@@ -38,14 +38,14 @@ const actions = {
   //     );
 
   //     const response = await axios.get(
-  //       `https://jsonplaceholder.typicode.com/dishes?_limit=${limit}`,
+  //       `http://localhost:3000/dishes?_limit=${limit}`,
   //     );
 
   //     commit('setDishes', response.data);
   //   },
   //   async updateDish({ commit }, updDish) {
   //     const response = await axios.put(
-  //       `https://jsonplaceholder.typicode.com/dishes/${updDish.id}`,
+  //       `http://localhost:3000/dishes/${updDish.id}`,
   //       updDish,
   //     );
 
