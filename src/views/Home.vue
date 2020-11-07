@@ -5,7 +5,7 @@
         Restaurant Home
       </h1>
       <p>
-        TP1 de Richi Tan, Mahdi
+        TP1 de Richi Tan, Mahdi Adnan Krayem, Franco Hyunh, Alexandru Prisecariu
       </p>
     </div>
   </div>

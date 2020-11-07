@@ -4,16 +4,18 @@
       <h1 class="title">
         Restaurant Menu
       </h1>
+      <Dishes/>
     </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+import Dishes from '../components/Dishes.vue';
 
 export default {
   name: 'Menu',
   components: {
+    Dishes,
   },
 };
 </script>

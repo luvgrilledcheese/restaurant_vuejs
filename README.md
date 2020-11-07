@@ -1,8 +1,10 @@
-# vue_example
-
+# TP1 - Restaurant Website
+### Made by Richi Tan, Mahdi Adnan Krayem, Franco Hyunh, Alexandru Prisecariu
 ## Project setup
 ```
 npm install
+npm install -g json-server
+json-server db.json
 ```
 
 ### Compiles and hot-reloads for development
@@ -10,15 +12,10 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
 ### Lints and fixes files
 ```
 npm run lint
+or
+npm run lint -- --fix
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

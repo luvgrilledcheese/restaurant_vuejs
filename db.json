@@ -1,0 +1,24 @@
+{
+    "dishes": [
+        {
+            "id": 0,
+            "name": "Hotdog",
+            "price": 2.0
+        },
+        {
+            "id": 1,
+            "name": "Hamburger",
+            "price": 7.0
+        },
+        {
+            "id": 2,
+            "name": "Fries",
+            "price": 2.0
+        },
+        {
+            "id": 3,
+            "name": "Softdrink",
+            "price": 1.5
+        }
+    ]
+}
