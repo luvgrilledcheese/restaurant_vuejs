@@ -5,6 +5,10 @@
 ```
 npm install
 npm install -g json-server
+```
+
+### Json server
+```
 json-server db.json
 ```
 
