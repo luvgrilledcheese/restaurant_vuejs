@@ -18,14 +18,14 @@ const actions = {
 
     commit('setDishes', response.data);
   },
-  //   async addDish({ commit }, title) {
-  //     const response = await axios.post(
-  //       'http://localhost:3000/dishess',
-  //       { title, completed: false },
-  //     );
+  async addDish({ commit }, name, price) {
+    const response = await axios.post(
+      'http://localhost:3000/dishes',
+      { name, price },
+    );
 
-  //     commit('newDish', response.data);
-  //   },
+    commit('newDish', response.data);
+  },
   //   async deleteDish({ commit }, id) {
   //     await axios.delete(`http://localhost:3000/dishes/${id}`);
 
@@ -51,20 +51,21 @@ const actions = {
 
   //     console.log(response.data);
 
-//     commit('updateDish', response.data);
-//   },
+  //     commit('updateDish', response.data);
+  //   },
 };
 
 const mutations = {
   setDishes: (state, dishes) => { (state.dishes = dishes); },
-//   newDish: (state, dish) => state.dishes.unshift(dish),
-//   removeDish: (state, id) => { (state.dishes = state.dishes.filter((dish) => dish.id !== id)); },
-//   updateDish: (state, updDish) => {
-//     const index = state.dishes.findIndex((dish) => dish.id === updDish.id);
-//     if (index !== -1) {
-//       state.dishes.splice(index, 1, updDish);
-//     }
-//   },
+  newDish: (state, dish) => state.dishes.unshift(dish),
+  //   removeDish: (state, id) => {
+  //   (state.dishes = state.dishes.filter((dish) => dish.id !== id)); },
+  //   updateDish: (state, updDish) => {
+  //     const index = state.dishes.findIndex((dish) => dish.id === updDish.id);
+  //     if (index !== -1) {
+  //       state.dishes.splice(index, 1, updDish);
+  //     }
+  //   },
 };
 
 export default {

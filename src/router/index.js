@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Menu from '../views/Menu.vue';
+import Admin from '../views/Admin.vue';
 
 Vue.use(VueRouter);
 
@@ -12,7 +13,7 @@ const routes = [
     component: Home,
   },
   {
-    path: '/about',
+    path: '/About',
     name: 'About',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -20,9 +21,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },
   {
-    path: '/menu',
+    path: '/Menu',
     name: 'Menu',
     component: Menu,
+  },
+  {
+    path: '/Admin',
+    name: 'Admin',
+    component: Admin,
   },
 ];
 

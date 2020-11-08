@@ -1,10 +1,12 @@
 <template>
   <div class="home">
     <div class="container">
-      <h1 class="title">
+      <h1 class="title" style="margin-top:4%">
         Restaurant Menu
       </h1>
-      <Dishes/>
+      <div style="display: flex;">
+        <Dishes/>
+      </div>
     </div>
   </div>
 </template>
@@ -21,7 +23,7 @@ export default {
 </script>
 
 <style scoped>
-  h1 {
-    margin-top: 4%;
-  }
+.dishes {
+  display: flex;
+}
 </style>

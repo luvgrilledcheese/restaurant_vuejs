@@ -4,8 +4,15 @@
       <div class="navbar-start">
         <router-link to="/" class="navbar-item link">Home</router-link>
         <router-link to="/Menu" class="navbar-item link">Menu</router-link>
-        <router-link to="/about" class="navbar-item link">About</router-link>
+        <router-link to="/About" class="navbar-item link">About</router-link>
       </div>
+      <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <router-link to="/Admin" class="button is-primary"><strong>Admin</strong></router-link>
+        </div>
+      </div>
+    </div>
     </div>
   </nav>
 </template>
