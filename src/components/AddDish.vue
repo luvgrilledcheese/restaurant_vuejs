@@ -2,9 +2,13 @@
   <div>
       <form @submit.prevent="onSubmit">
           <div class="field" style="margin-top:4%">
-            <label class="label">Name</label>
+            <label class="label" for="name">Name</label>
             <div class="control">
-              <input type="text" placeholder="Name of the food" v-model="name" class="input">
+              <input type="text"
+              id="name"
+              placeholder="Name of the food"
+              v-model="name"
+              class="input">
             </div>
           </div>
           <div class="field">

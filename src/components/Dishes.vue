@@ -18,14 +18,14 @@
         <div class="media-content">
           <div class="content">
             <p>
-              <strong style="color: #ffffff;">{{ dish.name }}</strong>
+              <strong style="color: #ffffff;" id="dish.id">{{ dish.name }}</strong>
               <br />
               {{ dish.price }}$
             </p>
           </div>
         </div>
         <div class="media-right">
-          <button v-on:click="deleteDish(dish.id)">delete</button>
+          <button v-on:click="deleteDish(dish.id)" class="delete"></button>
           <!-- <i  class="fas fa-trash-alt"></i> -->
         </div>
       </article>
@@ -39,8 +39,10 @@ import { mapGetters, mapActions } from 'vuex';
 export default {
   name: 'Dishes',
   methods: {
-    // ...mapActions(['fetchDishes', 'deleteDish', 'updateDish']),
-    ...mapActions(['fetchDishes', 'deleteDish']),
+    ...mapActions(['fetchDishes', 'deleteDish', 'updateDish']),
+    editNameDish() {
+
+    },
   },
   computed: mapGetters(['allDishes']),
   created() {

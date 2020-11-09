@@ -2,7 +2,7 @@
   <div class="about">
     <div class="container">
       <h1 class="title">
-        Restaurant About
+        About
       </h1>
     </div>
   </div>

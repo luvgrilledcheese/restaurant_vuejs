@@ -2,7 +2,7 @@
   <div class="home">
     <div class="container">
       <h1 class="title" style="margin-top:4%">
-        Restaurant Menu
+        Menu
       </h1>
       <div style="display: flex;">
         <Dishes/>
