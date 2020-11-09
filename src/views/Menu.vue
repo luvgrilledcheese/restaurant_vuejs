@@ -5,7 +5,7 @@
         Menu
       </h1>
       <div style="display: flex;">
-        <Dishes/>
+        <Dishes v-bind:style="'color: ' + 'blue' + ' !important'"/>
       </div>
     </div>
   </div>

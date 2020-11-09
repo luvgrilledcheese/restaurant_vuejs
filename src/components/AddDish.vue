@@ -18,7 +18,7 @@
             </div>
           </div>
           <div class="control">
-            <input type="submit" value="New dish" class="button is-dark">
+            <input type="submit" value="New dish" class="button">
           </div>
       </form>
   </div>
@@ -49,7 +49,17 @@ export default {
 
 <style scoped>
 label {
-  color: #1B1725;
+  color: #363636;
   font-weight: normal;
+}
+.button {
+  color: #f2f6fa;
+  background-color: #23A0A9;
+  border: none;
+}
+
+.button:hover {
+  color: white;
+  background-color: #2AC0CB;
 }
 </style>

@@ -25,7 +25,8 @@
           </div>
         </div>
         <div class="media-right">
-          <button v-on:click="deleteDish(dish.id)" class="delete"></button>
+          <button v-on:click="deleteDish(dish.id)"
+          class="delete" ref="btnDelete"></button>
           <!-- <i  class="fas fa-trash-alt"></i> -->
         </div>
       </article>
@@ -48,8 +49,15 @@ export default {
   created() {
     this.fetchDishes();
   },
+  mounted() {
+    console.log('App this router:', this.$router);
+    console.log('App currentRoute:', this.$router.currentRoute.name);
+  },
 };
 </script>
 
 <style scoped>
+.hide {
+  display: none;
+}
 </style>
