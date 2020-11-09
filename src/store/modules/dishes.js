@@ -18,19 +18,17 @@ const actions = {
 
     commit('setDishes', response.data);
   },
-  async addDish({ commit }, name, price) {
-    const response = await axios.post(
-      'http://localhost:3000/dishes',
-      { name, price },
-    );
+  async addDish({ commit }, dish) {
+    const response = await axios.post('http://localhost:3000/dishes', dish);
 
     commit('newDish', response.data);
+    console.log('newDish', response.data);
   },
-  //   async deleteDish({ commit }, id) {
-  //     await axios.delete(`http://localhost:3000/dishes/${id}`);
+  async deleteDish({ commit }, id) {
+    await axios.delete(`http://localhost:3000/dishes/${id}`);
 
-  //     commit('removeDish', id);
-  //   },
+    commit('removeDish', id);
+  },
   //   async filterDishes({ commit }, e) {
   //     // Get selected number
   //     const limit = parseInt(
@@ -58,8 +56,9 @@ const actions = {
 const mutations = {
   setDishes: (state, dishes) => { (state.dishes = dishes); },
   newDish: (state, dish) => state.dishes.unshift(dish),
-  //   removeDish: (state, id) => {
-  //   (state.dishes = state.dishes.filter((dish) => dish.id !== id)); },
+  removeDish: (state, id) => {
+    (state.dishes = state.dishes.filter((dish) => dish.id !== id));
+  },
   //   updateDish: (state, updDish) => {
   //     const index = state.dishes.findIndex((dish) => dish.id === updDish.id);
   //     if (index !== -1) {

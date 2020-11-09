@@ -9,7 +9,7 @@
       <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <router-link to="/Admin" class="button is-primary"><strong>Admin</strong></router-link>
+          <router-link to="/Admin" class="button"><strong>Admin</strong></router-link>
         </div>
       </div>
     </div>
@@ -26,12 +26,19 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 nav {
-  background-color: beige;
+  background-color: #EE6C4D;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.03), 0 6px 20px 0 rgba(0, 0, 0, 0.03);
   color: black;
 }
 
+.button {
+  color: #EDE6E3;
+  background-color: #D7263D;
+  border: none;
+}
+
 a {
-  color: black;
+  color: #EDE6E3;
+  font-size: 1.1em;
 }
 </style>

@@ -1,9 +1,21 @@
 <template>
   <div>
-      <form @submit="onSubmit">
-          <input type="text" placeholder="Name of the food">
-          <input type="text" placeholder="Price of the food">
-          <input type="submit" value="Submit">
+      <form @submit.prevent="onSubmit">
+          <div class="field" style="margin-top:4%">
+            <label class="label">Name</label>
+            <div class="control">
+              <input type="text" placeholder="Name of the food" v-model="name" class="input">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Price</label>
+            <div class="control">
+              <input type="text" placeholder="Name of the food" v-model="price" class="input">
+            </div>
+          </div>
+          <div class="control">
+            <input type="submit" value="New dish" class="button is-dark">
+          </div>
       </form>
   </div>
 </template>
@@ -21,14 +33,19 @@ export default {
   },
   methods: {
     ...mapActions(['addDish']),
-    onSubmit(e) {
-      e.preventDefault();
-      this.addDish(this.name, this.price);
+    onSubmit() {
+      this.addDish({
+        name: this.name,
+        price: this.price,
+      });
     },
   },
 };
 </script>
 
-<style>
-
+<style scoped>
+label {
+  color: #1B1725;
+  font-weight: normal;
+}
 </style>

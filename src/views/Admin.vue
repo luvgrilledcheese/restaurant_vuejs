@@ -9,7 +9,7 @@
         </div>
         <div class='column'>
             <h1 class="title is-5">
-                Add food:
+                Add dish:
                 <AddDish />
             </h1>
         </div>

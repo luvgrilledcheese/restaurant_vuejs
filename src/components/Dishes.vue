@@ -18,11 +18,15 @@
         <div class="media-content">
           <div class="content">
             <p>
-              <strong>{{ dish.name }}</strong>
+              <strong style="color: #ffffff;">{{ dish.name }}</strong>
               <br />
               {{ dish.price }}$
             </p>
           </div>
+        </div>
+        <div class="media-right">
+          <button v-on:click="deleteDish(dish.id)">delete</button>
+          <!-- <i  class="fas fa-trash-alt"></i> -->
         </div>
       </article>
     </div>
@@ -36,7 +40,7 @@ export default {
   name: 'Dishes',
   methods: {
     // ...mapActions(['fetchDishes', 'deleteDish', 'updateDish']),
-    ...mapActions(['fetchDishes']),
+    ...mapActions(['fetchDishes', 'deleteDish']),
   },
   computed: mapGetters(['allDishes']),
   created() {
@@ -46,5 +50,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
