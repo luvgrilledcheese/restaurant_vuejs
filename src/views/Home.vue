@@ -7,12 +7,14 @@
       <p>
         TP1 de Richi Tan, Mahdi Adnan Krayem, Franco Hyunh, Alexandru Prisecariu
       </p>
+      <div></div>
     </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+// @ is an alias to /srcsfdgs
+//asdfasdf
 
 export default {
   name: 'Home',
