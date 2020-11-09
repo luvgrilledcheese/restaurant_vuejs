@@ -15,7 +15,7 @@
             />
           </figure>
         </div>
-        <div class="media-content">
+        <div class="media-content" v-on:click="hideOnClick()">
           <div class="content">
             <p>
               <strong style="color: #ffffff;" id="dish.id">{{ dish.name }}</strong>
@@ -41,8 +41,9 @@ export default {
   name: 'Dishes',
   methods: {
     ...mapActions(['fetchDishes', 'deleteDish', 'updateDish']),
-    editNameDish() {
-
+    hideOnClick() {
+      const div = this.$refs.dishHide;
+      console.log(div);
     },
   },
   computed: mapGetters(['allDishes']),
@@ -59,5 +60,9 @@ export default {
 <style scoped>
 .hide {
   display: none;
+}
+.btn {
+  border: none;
+  background-color: inherit;
 }
 </style>

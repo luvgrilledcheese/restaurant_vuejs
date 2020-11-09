@@ -1,19 +1,9 @@
 {
   "dishes": [
     {
-      "name": "Hamburger",
-      "price": "15",
-      "id": 2
-    },
-    {
-      "name": "Hamburger",
-      "price": "15",
-      "id": 3
-    },
-    {
-      "name": "Hamburger",
-      "price": "15",
-      "id": 4
+      "name": "Hotdog",
+      "price": "12",
+      "id": 1
     }
   ]
 }
